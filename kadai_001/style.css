@@ -1,0 +1,228 @@
+/* PC、スマホ共通スタイル */
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Noto Sans Japanese",sans-serif;
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+}
+
+/* ヘッダー */
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 960px;
+}
+
+.header-inner a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* MyProfileの見出しの部分 */
+h1 {
+    margin: 0px 0px 0px 20px;
+    font-size: 34px;
+    border: 1px solid #000000;
+    padding: 0px 20px;
+
+}
+
+.home {
+    text-decoration: none;
+}
+
+/* ナビゲーションメニュー */
+nav .menu {
+    display: flex;
+    padding-left: 0px;
+}
+
+nav li {
+    margin: 0 20px;
+    list-style: none;
+}
+
+nav a {
+    font-size: 34px;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 34px;
+}
+
+#about {
+    margin-left: 310px;
+    margin-right: 310px;
+    margin-bottom: 73px;
+}
+
+p,
+li {
+    font-size: 18px;
+}
+
+/* 画像 */
+img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-picture {
+    margin-bottom: 72.24px;
+}
+
+/* About */
+.about-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 960px;
+    justify-content: center;
+    column-gap: 119px;
+    margin-bottom: 87px;
+}
+
+/* 名前 */
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 丸く切り取る画像 */
+.circle {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+}
+
+/* Works */
+
+#works {
+    margin-left: 344px;
+    margin-right: 344px;
+    margin-bottom: 80px;
+}
+
+.works-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 16px;
+}
+
+/* Worksの画像と説明部分 */
+.item {
+    padding-bottom: 60px;
+    width: 240px;
+}
+
+/* フッター */
+footer p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+        padding: 0.5px 20px;
+    }
+
+    .header-inner {
+        justify-content: center;
+        column-gap: 28px;
+        margin: 32px 0px;
+    }
+
+    nav .menu {
+        column-gap: 18px;
+    }
+
+    .main-picture {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 33px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 10px;
+        margin-bottom: 83px;
+    }
+
+    #about {
+        margin: 0 auto;
+    }
+
+    ul {
+        margin: 0 auto;
+        margin-bottom: 83px;
+    }
+
+    .works {
+        padding: 10px;
+    }
+
+    #works {
+        margin: 0 auto;
+        margin-bottom: 21px;
+    }
+
+    h2 {
+        padding: 30px 0px 20px 0px ;
+        font-size: 28px;
+    }
+
+    nav li {
+        margin: 0px;
+    }
+
+    nav a {
+        font-size: 21px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .item {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 44px;
+    }
+
+    .name ul li {
+        font-size: 18px;
+    }
+
+    .works-inner p {
+        font-size: 18px;
+    }
+
+    .works-inner {
+        margin-bottom: 42.26px;
+    }
+
+}
